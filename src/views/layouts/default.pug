@@ -16,18 +16,19 @@ html(lang="ru")
 		//title= `${page.title}`
 
 	body
-		block header
-			include ../partials/_header
+		.body-inner
+			block header
+				include ../partials/_header
 
-		main.main
-			block main
+			main.main
+				block main
 
-		block footer
-			include ../partials/_footer
+			block footer
+				include ../partials/_footer
 
-		block modals
+			block modals
 
 
-		script(src="js/main.js")
+			script(src="js/main.js")
 
-		block scripts
+			block scripts
