@@ -17,6 +17,37 @@ block main
 					.article
 						h1 Обратиться в отдел клиентского сервиса
 						.form-apply
+							.form-apply__inner
+								.fainp-row
+									.fainp-row-name  Ваше имя:
+									.fainp-row-content
+										input.fa-inp(type="text", placeholder="Денис Петров")
+								.fainp-row
+									.fainp-row-name  Ваш email:
+									.fainp-row-content
+										input.fa-inp(type="text", placeholder="example@mail.ru")
+								.fainp-row
+									.fainp-row-name  Тема вопроса:
+									.fainp-row-content
+										select.fa-select.js-fa-select(type="text", placeholder="Аккаунт пользователя")
+											option(value="") Аккаунт пользователя
+											option(value="") option 2
+											option(value="") option 3
+								.fainp-row
+									.fainp-row-name  Сообщение:
+									.fainp-row-content
+										textarea.fa-textarea.js-autosize(name="", cols="30", rows="1" placeholder="Текст сообщения")
+								.fainp-row
+									.fainp-row-name
+									.fainp-row-content
+										.fainp-bottom-flex
+											button.btn.btn--yellow.btn-send-form Отправить
+											label.file-input
+												input#file-inp-1.js-custom-file-inp(type="file", name="")
+												.tap-file-inp-text
+													.tap-file-inp-text__empty Прикрепить файл
+													.tap-file-inp-text__name
+
 
 
 				footer.article-footer
