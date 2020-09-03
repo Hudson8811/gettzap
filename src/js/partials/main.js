@@ -9,6 +9,6 @@ $(document).ready(function () {
 	}
 	$('.js-custom-file-inp').on('change', function() {
 		var splittedFakePath = this.value.split('\\');
-		$(this).siblings('.tap-file-inp-text').addClass('tap-file-inp-text--non-empty').find('.tap-file-inp-text__name').text(splittedFakePath[splittedFakePath.length - 1]);
+		$(this).closest('.file-input').siblings('.tap-file-inp-text').addClass('tap-file-inp-text--non-empty').find('.tap-file-inp-text__name').text(splittedFakePath[splittedFakePath.length - 1]);
   });
 });

@@ -244,89 +244,6 @@ button {
 
 
 
-.article-poll__wrap {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.article-poll__name {
-	margin-right: 26px;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 150%;
-	color: #828282;
-	margin-bottom: 10px;
-}
-
-.article-poll {
-	display: flex;
-	height: 32px;
-	width: 165px;
-	min-width: 165px;
-	margin-bottom: 10px;
-
-	background: #FFFFFF;
-	/* Линии и обводки */
-
-	border: 1px solid #DADCE0;
-	box-sizing: border-box;
-	border-radius: 6px;
-}
-
-.article-poll-inp {
-	display: none;
-}
-
-.article-poll-item {
-	cursor: pointer;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: all .2s;
-
-	&::before {
-		content: '';
-		display: block;
-		width: 20px;
-		height: 19px;
-		background: url(../img/poll_y.svg) no-repeat center center;
-		background-size: contain;
-	}
-
-	&--y {
-		width: calc(50% + 1px);
-		border-right: 1px solid #DADCE0;
-	}
-
-	&--n {
-		width: calc(50% - 1px);
-
-		&::before {
-			transform: rotate(180deg);
-		}
-	}
-
-	span {
-		display: inline-block;
-		margin-left: 8px;
-		font-size: 14px;
-		line-height: 1;
-		color: #000000;
-	}
-}
-
-.article-poll-inp:checked+.article-poll-item {
-	pointer-events: none;
-}
-
-.article-poll-item:hover,
-.article-poll-inp:checked+.article-poll-item {
-	background: #F2F2F2;
-}
-
-
 
 
 .article-footer {
@@ -478,7 +395,7 @@ button {
 		background: url(../img/select_arrow.svg) no-repeat center center;
 		background-size: contain;
 		transform-origin: center;
-		-moz-transition-duration: .2s;
+		transition-duration: .2s;
 	}
 	&.open::after{
 		transform: rotate(180deg);
@@ -578,4 +495,8 @@ button {
 .tap-file-inp-text__name {
     line-height: 1.1;
 	word-wrap: break-word;
+}
+
+ul,ol,li{
+	list-style: none;
 }

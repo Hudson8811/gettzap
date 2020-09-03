@@ -5,8 +5,8 @@ $(document).ready(function () {
 		$('body').toggleClass('body-menu-open');
 	});
 
-	$('.search-btn').click(function () {
-		$(this).closest('.search-wrap').toggleClass('search-wrap--active');
+	$('.js-my-search-btn').click(function () {
+		$(this).closest('.my-search-wrap').toggleClass('my-search-wrap--active');
 		//$('.sh-menu-wrap').toggleClass('sh-menu-wrap--open');
 	});
 
